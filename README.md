@@ -9,7 +9,7 @@
 * **姓名**：林孟軒
 
 ## 硬體與環境狀態 (Environment Setup)
-* **PyTorch 執行環境**：Windows CUDA 13.2
+* **PyTorch 執行環境**：Windows CUDA 13.2 (桌機) / Windows CPU (筆電)
 
 ---
 
@@ -21,7 +21,6 @@
 - [x] 成功建立 `.venv` 虛擬環境，並透過 `.gitignore` 隱藏底層檔案。
 - [x] 成功於虛擬環境內安裝通用套件清單 (`requirements.txt`) 與專屬硬體版本的 PyTorch。
 - [x] 更新本 README 文件，填寫學號、姓名與 PyTorch 環境狀態。
-- [x] 成功使用 Git 完成 `commit` 並 `push` 同步至 GitHub 雲端。
 - [x] 成功使用 Git 完成 `commit` 並 `push` 同步至 GitHub 雲端。
 
 ### Week 4 / 8: Data Ingestion & Topology-Aware Chunking
@@ -38,3 +37,14 @@
 - [x] **觀測儀表板與報告**：
   - [x] 成功繪製 4 拼圖資料觀測儀表板 (4-Panel Dashboard)。
   - [x] 成功將核心評估指標匯出為根目錄下的 `metrics.json`。
+
+### Week 9：期中資料前處理報告
+- [x] 完成 `DATA_REPORT.md` 與 `reports/figures/` 對照截圖，建立 Release `v0.5-midterm`。
+
+### Week 10：關鍵字檢索 vs 語意檢索 (Keyword vs Semantic Retrieval)
+- [x] 安裝 jieba、rank_bm25、scikit-learn、sentence-transformers，下載句向量模型 `bge-small-zh-v1.5` 至 `models/` (不上傳)。
+- [x] 實作 TF-IDF、BM25、句向量 (dense) 三種檢索，完成 7 個 TODO。
+- [x] 以 10 個校規問題人工判斷 hit@3：TF-IDF 0.4、BM25 0.5、Dense 0.8；口語問題關鍵字檢索為 0，Dense 為 0.6。
+- [x] 設計 2 個自訂問題並完成 3 題反思。
+- **新增檔案**：`notebooks/10_setup.ipynb`、`notebooks/10_vector_similarity.ipynb`、`week10_retrieval_comparison.json`
+- **更新檔案**：`requirements.txt`、`.gitignore` (新增 `models/`、`data/embeddings/`)、`AI_USAGE.md`
